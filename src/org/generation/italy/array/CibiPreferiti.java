@@ -5,16 +5,22 @@ public class CibiPreferiti {
 	public static void main(String[] args) {
 		
 		//Array
-		String[] cibiPreferiti = {"Pizza", "Pasta", "Funghi", "Mele", "Ribes", "Gelato"};
+		String[] cibiPreferiti = {"Pizza", "Pasta", "Funghi", "Tacos", "Mele", "Ribes", "Gelato"};
 		
-		//Conta degli elemente nell'Array
+		//Conta degli elementi nell'Array
 		int totaleCibi = cibiPreferiti.length;
 		
 		//Stampa a schermo
+		
+		//Totale cibi in classifica
 		System.out.println("Totale dei miei cibi preferiti in classifica: " + totaleCibi);
+		//Primo cibo
 		System.out.println("Primo cibo  preferito: " + cibiPreferiti [0]);
-		System.out.println("Terzo cibo  preferito: " + cibiPreferiti [2]);
-		System.out.println("Sesto cibo  preferito: " + cibiPreferiti [5]);
+		//Cibo di mezzo
+		System.out.println("Cibo di mezzo preferit: " + cibiPreferiti[cibiPreferiti.length /2]);
+		//Ultimo cibo
+		System.out.println("Ultimo cibo  preferito: " + cibiPreferiti[cibiPreferiti.length -1]);
+		
 		
 	}
 
