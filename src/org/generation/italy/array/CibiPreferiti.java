@@ -14,13 +14,21 @@ public class CibiPreferiti {
 		
 		//Totale cibi in classifica
 		System.out.println("Totale dei miei cibi preferiti in classifica: " + totaleCibi);
-		//Primo cibo
-		System.out.println("Primo cibo  preferito: " + cibiPreferiti [0]);
-		//Cibo di mezzo
-		System.out.println("Cibo di mezzo preferit: " + cibiPreferiti[cibiPreferiti.length /2]);
-		//Ultimo cibo
-		System.out.println("Ultimo cibo  preferito: " + cibiPreferiti[cibiPreferiti.length -1]);
 		
+		int mediana;
+		
+		if(totaleCibi % 2 == 0) {
+			mediana = totaleCibi / 2;
+		} else {
+			mediana = (totaleCibi +1) /2;
+		}
+		
+		//Primo cibo
+				System.out.println("Primo cibo  preferito: " + cibiPreferiti [0]);
+				//Cibo di mezzo
+				System.out.println("Cibo di mezzo preferit: " + cibiPreferiti [mediana -1]);
+				//Ultimo cibo
+				System.out.println("Ultimo cibo  preferito: " + cibiPreferiti[cibiPreferiti.length -1]);
 		
 	}
 
